@@ -1,0 +1,57 @@
+<style>
+
+th {
+  padding-right: 50px;
+}
+
+</style>
+
+<h1>Welcome to homework 3!</h1>
+
+<h2>Users Table</h2>
+<table>
+  <tr>
+    <th>Username</th>
+    <th>Age</th>
+    <th>Email</th>
+  </tr>
+
+   <% @users.each do |user| %>
+  <tr>
+    <td><%= user.username %></td>
+    <td><%= user.age %></td>
+    <td><%= user.email %></td>
+  </tr>
+  <% end %>
+
+</table>
+
+<h2>Cats Table</h2>
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+   <% @cats.each do |cat| %>
+  <tr>
+    <td><%= cat.name %></td>
+  </tr>
+  <% end %>
+
+</table>
+
+<h2>Todos Table</h2>
+<table>
+  <tr>
+    <th>Tasks</th>
+    <th>Finished</th>
+  </tr>
+
+   <% @todos.each do |todo| %>
+  <tr>
+    <td><%= todo.tasks %></td>
+    <td><%= todo.finished %></td>
+  </tr>
+  <% end %>
+
+</table>
